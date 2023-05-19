@@ -1,0 +1,20 @@
+digraph "Piece"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Piece",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Cette classe met en place le type abstrait Piece, à partir duquel toutes les pièces vont être dérivée..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Cavalier",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_cavalier.html",tooltip="Cette classe met en place la classe Cavalier, elle permet de représenter les cavaliers et leurs mouve..."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Fou",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_fou.html",tooltip="Cette classe met en place le type Fou, pour représenter et manipuler les fou. La classe Piece est vir..."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Reine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_reine.html",tooltip="Cette classe met en place la classe Reine, elle permet de représenter la reine et ses mouvements...."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Pion",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pion.html",tooltip="Cette classe met en place la classe Pion, elle permet de représenter les pions et leurs mouvements."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Roi",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_roi.html",tooltip="Cette classe met en place la classe Roi, elle permet de représenter le roi et ses mouvements."];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Tour",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tour.html",tooltip="Cette classe met en place le type Tour, pour représenter et manipuler les tours. La classe Piece est ..."];
+  Node7 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

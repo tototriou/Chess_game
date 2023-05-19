@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet echec:  Fichier source de include/jeu.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet echec
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">jeu.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="jeu_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GAME_HPP</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define GAME_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;typeinfo&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cavalier_8h.html">cavalier.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="couleur_8h.html">couleur.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;dame.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="fou_8h.html">fou.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="piece_8h.html">piece.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pion_8h.html">pion.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="plateau_8h.html">plateau.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="roi_8h.html">roi.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="square_8h.html">square.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="tour_8h.html">tour.h</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="jeu_8h.html#ac628aff374c432084437661e9acaf134">   19</a></span>&#160;<span class="preprocessor">#define VICTOIRE 2</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_partie.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_partie.html">Partie</a> {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_partie.html#ae40831aad10fc4a391295e2ea1447b5a">Partie</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_partie.html#afe9428046f775342f8d377205fa8c4f1">print</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_partie.html#afc5ef99251dd55e258fe3eb0091e3458">coup</a>(std::string origine, std::string destination);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    Color <a class="code" href="class_partie.html#a98648c197d60d501eb28bc4651ccac5b">couleur_actuelle</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_partie.html#ae949f9cdf861944d5aed5237aacab77d">roque_dame</a>();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_partie.html#a3bd1aedbc9c13bdbe3d5481405bfcdbf">roque_roi</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    Board plateau;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    Color tour_actuel;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">bool</span> roque_blanc; <span class="comment">// les blancs peuvent roquer</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">bool</span> roque_noir;  <span class="comment">// les noirs peuvent roquer</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_partie_html_a3bd1aedbc9c13bdbe3d5481405bfcdbf"><div class="ttname"><a href="class_partie.html#a3bd1aedbc9c13bdbe3d5481405bfcdbf">Partie::roque_roi</a></div><div class="ttdeci">void roque_roi()</div><div class="ttdoc">met a jour l'attribut privé &lt;couleur&gt;_roque et affiche un message d'erreur si le roque est impossible...</div></div>
+<div class="ttc" id="apiece_8h_html"><div class="ttname"><a href="piece_8h.html">piece.h</a></div></div>
+<div class="ttc" id="aclass_partie_html_ae949f9cdf861944d5aed5237aacab77d"><div class="ttname"><a href="class_partie.html#ae949f9cdf861944d5aed5237aacab77d">Partie::roque_dame</a></div><div class="ttdeci">void roque_dame()</div><div class="ttdoc">met a jour l'attribut privé &lt;couleur&gt;_roque et affiche un message d'erreur si le roque est impossible...</div></div>
+<div class="ttc" id="afou_8h_html"><div class="ttname"><a href="fou_8h.html">fou.h</a></div></div>
+<div class="ttc" id="aplateau_8h_html"><div class="ttname"><a href="plateau_8h.html">plateau.h</a></div></div>
+<div class="ttc" id="acavalier_8h_html"><div class="ttname"><a href="cavalier_8h.html">cavalier.h</a></div></div>
+<div class="ttc" id="aclass_partie_html_ae40831aad10fc4a391295e2ea1447b5a"><div class="ttname"><a href="class_partie.html#ae40831aad10fc4a391295e2ea1447b5a">Partie::Partie</a></div><div class="ttdeci">Partie()</div></div>
+<div class="ttc" id="aclass_partie_html_afe9428046f775342f8d377205fa8c4f1"><div class="ttname"><a href="class_partie.html#afe9428046f775342f8d377205fa8c4f1">Partie::print</a></div><div class="ttdeci">void print()</div><div class="ttdoc">affiche l'état actuel de la partie : le plateau</div></div>
+<div class="ttc" id="asquare_8h_html"><div class="ttname"><a href="square_8h.html">square.h</a></div></div>
+<div class="ttc" id="acouleur_8h_html"><div class="ttname"><a href="couleur_8h.html">couleur.h</a></div></div>
+<div class="ttc" id="aclass_partie_html"><div class="ttname"><a href="class_partie.html">Partie</a></div><div class="ttdoc">Cette classe représente une partie et gère ses états après chaque tour.</div><div class="ttdef"><b>Definition:</b> jeu.h:25</div></div>
+<div class="ttc" id="apion_8h_html"><div class="ttname"><a href="pion_8h.html">pion.h</a></div></div>
+<div class="ttc" id="atour_8h_html"><div class="ttname"><a href="tour_8h.html">tour.h</a></div></div>
+<div class="ttc" id="aclass_partie_html_a98648c197d60d501eb28bc4651ccac5b"><div class="ttname"><a href="class_partie.html#a98648c197d60d501eb28bc4651ccac5b">Partie::couleur_actuelle</a></div><div class="ttdeci">Color couleur_actuelle()</div></div>
+<div class="ttc" id="aroi_8h_html"><div class="ttname"><a href="roi_8h.html">roi.h</a></div></div>
+<div class="ttc" id="aclass_partie_html_afc5ef99251dd55e258fe3eb0091e3458"><div class="ttname"><a href="class_partie.html#afc5ef99251dd55e258fe3eb0091e3458">Partie::coup</a></div><div class="ttdeci">int coup(std::string origine, std::string destination)</div><div class="ttdoc">vérifie si le joueur bouge une pièce qui lui appartient (de sa couleur) ou pas</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

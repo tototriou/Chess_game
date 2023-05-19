@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet echec:  Fichier source de include/reine.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet echec
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">reine.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="reine_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef QUEEN_HPP</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define QUEEN_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="couleur_8h.html">couleur.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="fou_8h.html">fou.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="piece_8h.html">piece.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="square_8h.html">square.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="tour_8h.html">tour.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_reine.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_reine.html">Reine</a> : <span class="keyword">public</span> <a class="code" href="class_tour.html">Tour</a>, <span class="keyword">public</span> <a class="code" href="class_fou.html">Fou</a> {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_reine.html#a371ff58cb4ecf3372e59feca3e857309">Reine</a>(<a class="code" href="couleur_8h.html#aa304d0ca681f782b1d7735da33037dd7">Couleur</a> couleur, std::string nom = <span class="stringliteral">&quot;\u2655&quot;</span>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">virtual</span> std::vector&lt;Square&gt; <a class="code" href="class_reine.html#aefb6e77896ff7f04615dbe1934f23044">coups_possibles</a>(<a class="code" href="class_square.html">Square</a> origine);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_reine.html#af0f237e64586dbeb34ff761f92694518">est_legal</a>(<a class="code" href="class_piece.html">Piece</a> *plateau[8][8], <a class="code" href="class_square.html">Square</a> origine, <a class="code" href="class_square.html">Square</a> destination);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_reine_html"><div class="ttname"><a href="class_reine.html">Reine</a></div><div class="ttdoc">Cette classe met en place la classe Reine, elle permet de représenter la reine et ses mouvements....</div><div class="ttdef"><b>Definition:</b> reine.h:21</div></div>
+<div class="ttc" id="aclass_fou_html"><div class="ttname"><a href="class_fou.html">Fou</a></div><div class="ttdoc">Cette classe met en place le type Fou, pour représenter et manipuler les fou. La classe Piece est vir...</div><div class="ttdef"><b>Definition:</b> fou.h:18</div></div>
+<div class="ttc" id="apiece_8h_html"><div class="ttname"><a href="piece_8h.html">piece.h</a></div></div>
+<div class="ttc" id="afou_8h_html"><div class="ttname"><a href="fou_8h.html">fou.h</a></div></div>
+<div class="ttc" id="aclass_square_html"><div class="ttname"><a href="class_square.html">Square</a></div><div class="ttdoc">This class represents a square on the chessboard, represented by its coordinates, which can be manipu...</div><div class="ttdef"><b>Definition:</b> square.h:17</div></div>
+<div class="ttc" id="aclass_reine_html_af0f237e64586dbeb34ff761f92694518"><div class="ttname"><a href="class_reine.html#af0f237e64586dbeb34ff761f92694518">Reine::est_legal</a></div><div class="ttdeci">bool est_legal(Piece *plateau[8][8], Square origine, Square destination)</div></div>
+<div class="ttc" id="asquare_8h_html"><div class="ttname"><a href="square_8h.html">square.h</a></div></div>
+<div class="ttc" id="acouleur_8h_html"><div class="ttname"><a href="couleur_8h.html">couleur.h</a></div></div>
+<div class="ttc" id="acouleur_8h_html_aa304d0ca681f782b1d7735da33037dd7"><div class="ttname"><a href="couleur_8h.html#aa304d0ca681f782b1d7735da33037dd7">Couleur</a></div><div class="ttdeci">Couleur</div><div class="ttdef"><b>Definition:</b> couleur.h:4</div></div>
+<div class="ttc" id="aclass_tour_html"><div class="ttname"><a href="class_tour.html">Tour</a></div><div class="ttdoc">Cette classe met en place le type Tour, pour représenter et manipuler les tours. La classe Piece est ...</div><div class="ttdef"><b>Definition:</b> tour.h:18</div></div>
+<div class="ttc" id="atour_8h_html"><div class="ttname"><a href="tour_8h.html">tour.h</a></div></div>
+<div class="ttc" id="aclass_reine_html_aefb6e77896ff7f04615dbe1934f23044"><div class="ttname"><a href="class_reine.html#aefb6e77896ff7f04615dbe1934f23044">Reine::coups_possibles</a></div><div class="ttdeci">virtual std::vector&lt; Square &gt; coups_possibles(Square origine)</div></div>
+<div class="ttc" id="aclass_reine_html_a371ff58cb4ecf3372e59feca3e857309"><div class="ttname"><a href="class_reine.html#a371ff58cb4ecf3372e59feca3e857309">Reine::Reine</a></div><div class="ttdeci">Reine(Couleur couleur, std::string nom=&quot;\u2655&quot;)</div></div>
+<div class="ttc" id="aclass_piece_html"><div class="ttname"><a href="class_piece.html">Piece</a></div><div class="ttdoc">Cette classe met en place le type abstrait Piece, à partir duquel toutes les pièces vont être dérivée...</div><div class="ttdef"><b>Definition:</b> piece.h:16</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>
